@@ -1,2 +1,2 @@
 # Front-end-Web-Develpoment
-All projects related to html ,CSS, JQuery
+All projects and codes related to html ,CSS, JQuery
