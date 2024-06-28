@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Operations</title>
+</head>
+<body>
+
+<script>
+    // Prompt the user to enter an array (comma-separated values)
+    var inputArray = prompt("Enter an array of numbers (comma-separated):");
+    
+    // Convert the input string to an array of numbers
+    var originalArray = inputArray.split(',').map(function(item) {
+        return parseInt(item, 10);
+    });
+
+    // Display Entered Array
+    document.write("<h2>1. Entered Array: " + originalArray + "</h2>");
+
+    // Display Entered Array in Ascending Order
+    var ascendingArray = originalArray.slice().sort(function(a, b) {
+        return a - b;
+    });
+    document.write("<h2>2. Entered Array in Ascending Order: " + ascendingArray + "</h2>");
+
+    // Push element 25
+    originalArray.push(25);
+
+    // Display Updated Array
+    document.write("<h2>3. Array after Pushing 25: " + originalArray + "</h2>");
+
+    // Print Length of Array
+    document.write("<h2>4. Length of Updated Array: " + originalArray.length + "</h2>");
+
+    // Show Element at Position No 3
+    var elementAtPosition3 = originalArray[2];
+    document.write("<h2>5. Element at Position No 3: " + elementAtPosition3 + "</h2>");
+
+</script>
+
+</body>
+</html>
